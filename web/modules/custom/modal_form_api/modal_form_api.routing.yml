@@ -1,0 +1,17 @@
+modal_form_api.form:
+  path: '/admin/config/example_form'
+  defaults:
+    _form: 'Drupal\modal_form_api\Form\ExampleForm'
+    _title: 'Example Form'
+  requirements:
+    _permission: 'administer site configuration'
+
+modal_form_api.open_modal_form:
+  path: '/admin/config/modal_form'
+  defaults:
+    _title: 'Modal Form'
+    _controller: '\Drupal\modal_form_api\Controller\ModalFormApiController::openModalForm'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE

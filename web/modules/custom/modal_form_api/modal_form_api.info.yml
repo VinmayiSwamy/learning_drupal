@@ -1,0 +1,5 @@
+name: modal_form_api
+description:  A custom form in Modal pop up using Drupal Form API and submit the data using Ajax.
+core: 8.x
+package: Custom
+type: module
